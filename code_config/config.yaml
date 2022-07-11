@@ -1,0 +1,19 @@
+version: 1.1
+debug: True
+data:
+  root: "./data"
+  train: "train.csv"
+  test: "test.csv"
+  validation:
+    path: "/validation_path"
+    percentage: 0.2
+train:
+  epochs: 120
+  batch_size: 64
+  lr: 0.001
+  callback: True
+  retrain: False
+port: 3000
+state:
+  - train
+  - test
